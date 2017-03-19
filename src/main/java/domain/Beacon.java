@@ -1,14 +1,29 @@
 package domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import java.io.Serializable;
+
 /**
  * Created by Jim on 14-3-2017.
  */
-public class Beacon {
+@Entity
+@NamedQueries({
+    @NamedQuery(name = "beacon.findByICAN", query = "select b from Beacon b where b.ICAN = :ICAN"),
+    @NamedQuery(name = "beacon.findByTimestamp", query = "select b from Beacon b where b.timestamp = :timestamp"),
+    @NamedQuery(name = "beacon.findByTimestampAndICAN", query = "select b from Beacon b where b.timestamp = :timestamp and b.ICAN = :ICAN")
+})
+public class Beacon implements Serializable{
 
+    @Id
     private  String ICAN;
+    @Id
+    private long timestamp;
+
     private double latitude;
     private double longtitude;
-    private long timestamp;
     private String signature;
 
     public Beacon() {
@@ -19,6 +34,7 @@ public class Beacon {
         this.latitude = latitude;
         this.longtitude = longtitude;
         this.timestamp = timestamp;
+        this.signature = "NONE";
     }
 
     public Beacon(String ICAN, double latitude, double longtitude, long timestamp, String signature) {
