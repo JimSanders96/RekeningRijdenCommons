@@ -12,4 +12,5 @@ public class UserJSON {
     @XmlElement public String password;
     @XmlElement public String email;
     @XmlElement public String phoneNumber;
+    @XmlElement public long vehicleOwnerId;
 }

@@ -21,18 +21,17 @@ public class User implements Serializable {
     private String email;
     private String phoneNumber;
 
-    @OneToOne
-    private VehicleOwner vehicleOwner;
+    private long vehicleOwnerId;
 
     public User() {
     }
 
-    public User(String username, String password, String email, String phoneNumber, VehicleOwner vehicleOwner) {
+    public User(String username, String password, String email, String phoneNumber, long vehicleOwnerId) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.phoneNumber = phoneNumber;
-        this.vehicleOwner = vehicleOwner;
+        this.vehicleOwnerId = vehicleOwnerId;
     }
 
     public long getId() {
@@ -75,11 +74,11 @@ public class User implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public VehicleOwner getVehicleOwner() {
-        return vehicleOwner;
+    public long getVehicleOwnerId() {
+        return vehicleOwnerId;
     }
 
-    public void setVehicleOwner(VehicleOwner vehicleOwner) {
-        this.vehicleOwner = vehicleOwner;
+    public void setVehicleOwnerId(long vehicleOwnerId) {
+        this.vehicleOwnerId = vehicleOwnerId;
     }
 }
