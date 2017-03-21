@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac702cef-1568-4c4c-aff5-c879539dea21" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/domain/Month.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RekeningRijdenCommons.iml" afterPath="$PROJECT_DIR$/RekeningRijdenCommons.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/Bill.java" afterPath="$PROJECT_DIR$/src/main/java/domain/Bill.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/json/BillJSON.java" afterPath="$PROJECT_DIR$/src/main/java/json/BillJSON.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,11 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bill.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bill.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/Bill.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1034">
               <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BillJSON.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/json/BillJSON.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,16 +185,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VehicleJSON.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/json/VehicleJSON.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BeaconJSON.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/json/BeaconJSON.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -261,7 +259,6 @@
         <option value="$PROJECT_DIR$/src/main/java/domain/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/StolenVehicle.java" />
         <option value="$PROJECT_DIR$/src/main/java/json/StolenVehicleJSON.java" />
-        <option value="$PROJECT_DIR$/src/main/java/json/BillJSON.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/json/UserJSON.java" />
         <option value="$PROJECT_DIR$/src/main/java/json/VehicleTrackerJSON.java" />
@@ -271,6 +268,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Month.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/Bill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/json/BillJSON.java" />
       </list>
     </option>
   </component>
@@ -440,6 +438,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1011,7 +1013,7 @@
       <workItem from="1489952470430" duration="5301000" />
       <workItem from="1490084476949" duration="7116000" />
       <workItem from="1490093333492" duration="132000" />
-      <workItem from="1490098587732" duration="1080000" />
+      <workItem from="1490098587732" duration="1279000" />
     </task>
     <task id="LOCAL-00001" summary="Added StolenVehicle class and json.&#10;Changed Dates to longs">
       <created>1490086617600</created>
@@ -1034,11 +1036,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490099061977</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Replaced java.time with joda.time">
+      <created>1490099682745</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490099682745</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14145000" />
+    <option name="totallyTimeSpent" value="14344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -1090,7 +1099,8 @@
     <MESSAGE value="Added StolenVehicle class and json.&#10;Changed Dates to longs" />
     <MESSAGE value="Updated some entity relations to work with id's instead of hard references to compensate for storage across multiple databases." />
     <MESSAGE value="Added javaee to dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added javaee to dependencies" />
+    <MESSAGE value="Replaced java.time with joda.time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced java.time with joda.time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1506,9 +1516,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1597,16 +1605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/json/BillJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1862,6 +1860,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1034">
           <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/json/BillJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
