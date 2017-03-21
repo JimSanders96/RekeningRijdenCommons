@@ -9,14 +9,13 @@ import java.util.List;
  */
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "vehicleTracker.findById", query = "select v from VehicleTracker v where v.id = :id")
+        @NamedQuery(name = "vehicleTracker.findByICAN", query = "select v from VehicleTracker v where v.ICAN = :ICAN")
 
 })
 public class VehicleTracker implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private String ICAN;
 
     @OneToMany
     private List<Beacon> beacons;
@@ -28,12 +27,12 @@ public class VehicleTracker implements Serializable {
         this.beacons = beacons;
     }
 
-    public long getId() {
-        return id;
+    public String getICAN() {
+        return ICAN;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setICAN(String ICAN) {
+        this.ICAN = ICAN;
     }
 
     public List<Beacon> getBeacons() {
