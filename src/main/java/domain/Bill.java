@@ -2,8 +2,7 @@ package domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.Instant;
-import java.time.Month;
+import org.joda.time.*;
 
 /**
  * Created by Jim on 14-3-2017.
@@ -46,7 +45,7 @@ public class Bill implements Serializable {
 
     @PrePersist
     public void setInitialValues(){
-        this.dateIssued = Instant.now().toEpochMilli();
+        this.dateIssued = DateTime.now().getMillis();
         this.billStatus = BillStatus.OPEN;
     }
 
