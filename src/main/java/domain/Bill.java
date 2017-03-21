@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.time.Instant;
 import java.time.Month;
-import java.util.Date;
 
 /**
  * Created by Jim on 14-3-2017.
@@ -22,7 +21,7 @@ public class Bill implements Serializable {
     private long id;
     private double amount;
     private Month regardedMonth;
-    private Date dateIssued;
+    private long dateIssued;
     private BillStatus billStatus;
     @ManyToOne
     private Region region;
@@ -37,7 +36,7 @@ public class Bill implements Serializable {
         this.region = region;
     }
 
-    Bill(double amount, Month regardedMonth, Date dateIssued, BillStatus billStatus, Region region) {
+    Bill(double amount, Month regardedMonth, long dateIssued, BillStatus billStatus, Region region) {
         this.amount = amount;
         this.regardedMonth = regardedMonth;
         this.dateIssued = dateIssued;
@@ -47,7 +46,7 @@ public class Bill implements Serializable {
 
     @PrePersist
     public void setInitialValues(){
-        this.dateIssued = Date.from(Instant.now());
+        this.dateIssued = Instant.now().toEpochMilli();
         this.billStatus = BillStatus.OPEN;
     }
 
@@ -75,11 +74,11 @@ public class Bill implements Serializable {
         this.regardedMonth = regardedMonth;
     }
 
-    public Date getDateIssued() {
+    public long getDateIssued() {
         return dateIssued;
     }
 
-    public void setDateIssued(Date dateIssued) {
+    public void setDateIssued(long dateIssued) {
         this.dateIssued = dateIssued;
     }
 
