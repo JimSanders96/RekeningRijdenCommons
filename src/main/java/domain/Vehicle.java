@@ -25,29 +25,28 @@ public class Vehicle implements Serializable {
     @OneToMany
     private List<VehicleOwner> previousVehicleOwners;
 
-    @OneToMany
-    private List<VehicleTracker> previousVehicleTrackers;
+    @ElementCollection
+    private List<String> previousVehicleTrackerICANs;
 
-    @OneToOne
-    private VehicleTracker currentVehicleTracker;
+    private String currentVehicleTrackerICAN;
 
     public Vehicle() {
     }
 
-    public Vehicle(String licencePlate, String brand, VehicleOwner currentVehicleOwner, VehicleTracker currentVehicleTracker) {
+    public Vehicle(String licencePlate, String brand, VehicleOwner currentVehicleOwner, String currentVehicleTrackerICAN) {
         this.licencePlate = licencePlate;
         this.brand = brand;
         this.currentVehicleOwner = currentVehicleOwner;
-        this.currentVehicleTracker = currentVehicleTracker;
+        this.currentVehicleTrackerICAN = currentVehicleTrackerICAN;
     }
 
-    public Vehicle(String licencePlate, String brand, VehicleOwner currentVehicleOwner, List<VehicleOwner> previousVehicleOwners, List<VehicleTracker> previousVehicleTrackers, VehicleTracker currentVehicleTracker) {
+    public Vehicle(String licencePlate, String brand, VehicleOwner currentVehicleOwner, List<VehicleOwner> previousVehicleOwners, List<String> previousVehicleTrackerICANs, String currentVehicleTrackerICAN) {
         this.licencePlate = licencePlate;
         this.brand = brand;
         this.currentVehicleOwner = currentVehicleOwner;
         this.previousVehicleOwners = previousVehicleOwners;
-        this.previousVehicleTrackers = previousVehicleTrackers;
-        this.currentVehicleTracker = currentVehicleTracker;
+        this.previousVehicleTrackerICANs = previousVehicleTrackerICANs;
+        this.currentVehicleTrackerICAN = currentVehicleTrackerICAN;
     }
 
     public long getId() {
@@ -90,19 +89,19 @@ public class Vehicle implements Serializable {
         this.previousVehicleOwners = previousVehicleOwners;
     }
 
-    public List<VehicleTracker> getPreviousVehicleTrackers() {
-        return previousVehicleTrackers;
+    public List<String> getPreviousVehicleTrackerICANs() {
+        return previousVehicleTrackerICANs;
     }
 
-    public void setPreviousVehicleTrackers(List<VehicleTracker> previousVehicleTrackers) {
-        this.previousVehicleTrackers = previousVehicleTrackers;
+    public void setPreviousVehicleTrackerICANs(List<String> previousVehicleTrackerICAN) {
+        this.previousVehicleTrackerICANs = previousVehicleTrackerICAN;
     }
 
-    public VehicleTracker getCurrentVehicleTracker() {
-        return currentVehicleTracker;
+    public String getCurrentVehicleTrackerICAN() {
+        return currentVehicleTrackerICAN;
     }
 
-    public void setCurrentVehicleTracker(VehicleTracker currentVehicleTracker) {
-        this.currentVehicleTracker = currentVehicleTracker;
+    public void setCurrentVehicleTrackerICAN(String currentVehicleTrackerICAN) {
+        this.currentVehicleTrackerICAN = currentVehicleTrackerICAN;
     }
 }
