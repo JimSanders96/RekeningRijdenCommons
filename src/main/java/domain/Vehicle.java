@@ -2,6 +2,7 @@ package domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -31,6 +32,8 @@ public class Vehicle implements Serializable {
     private String currentVehicleTrackerICAN;
 
     public Vehicle() {
+        previousVehicleOwners = new ArrayList<>();
+        previousVehicleTrackerICANs = new ArrayList<>();
     }
 
     public Vehicle(String licencePlate, String brand, VehicleOwner currentVehicleOwner, String currentVehicleTrackerICAN) {

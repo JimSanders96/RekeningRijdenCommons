@@ -27,6 +27,7 @@ public class VehicleOwner implements Serializable {
     private List<Bill> bills;
 
     public VehicleOwner() {
+        bills = new ArrayList<>();
     }
 
     public VehicleOwner(boolean usesWebsite, String adress, String firstName, String lastName, String insertion, List<Bill> bills) {

@@ -2,6 +2,7 @@ package domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,6 +22,7 @@ public class VehicleTracker implements Serializable {
     private List<Beacon> beacons;
 
     public VehicleTracker() {
+        beacons = new ArrayList<>();
     }
 
     public VehicleTracker(List<Beacon> beacons) {
