@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac702cef-1568-4c4c-aff5-c879539dea21" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_javax_persistence_2_1_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/json/RoleJSON.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RekeningRijdenCommons.iml" afterPath="$PROJECT_DIR$/RekeningRijdenCommons.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/Beacon.java" afterPath="$PROJECT_DIR$/src/main/java/domain/Beacon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/Bill.java" afterPath="$PROJECT_DIR$/src/main/java/domain/Bill.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/BillStatus.java" afterPath="$PROJECT_DIR$/src/main/java/domain/BillStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/Employee.java" afterPath="$PROJECT_DIR$/src/main/java/domain/Employee.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/Region.java" afterPath="$PROJECT_DIR$/src/main/java/domain/Region.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/Role.java" afterPath="$PROJECT_DIR$/src/main/java/domain/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/Vehicle.java" afterPath="$PROJECT_DIR$/src/main/java/domain/Vehicle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/VehicleOwner.java" afterPath="$PROJECT_DIR$/src/main/java/domain/VehicleOwner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/domain/VehicleTracker.java" afterPath="$PROJECT_DIR$/src/main/java/domain/VehicleTracker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/json/BillJSON.java" afterPath="$PROJECT_DIR$/src/main/java/json/BillJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/json/EmployeeJSON.java" afterPath="$PROJECT_DIR$/src/main/java/json/EmployeeJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/json/RegionJSON.java" afterPath="$PROJECT_DIR$/src/main/java/json/RegionJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/json/UserJSON.java" afterPath="$PROJECT_DIR$/src/main/java/json/UserJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/json/VehicleJSON.java" afterPath="$PROJECT_DIR$/src/main/java/json/VehicleJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/json/VehicleOwnerJSON.java" afterPath="$PROJECT_DIR$/src/main/java/json/VehicleOwnerJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/json/VehicleTrackerJSON.java" afterPath="$PROJECT_DIR$/src/main/java/json/VehicleTrackerJSON.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -805,12 +781,20 @@
       <option name="presentableId" value="Default" />
       <updated>1489502582774</updated>
       <workItem from="1489502586212" duration="516000" />
-      <workItem from="1489952470430" duration="5301000" />
+      <workItem from="1489952470430" duration="5567000" />
     </task>
+    <task id="LOCAL-00001" summary="Implemented domain and json classes.&#10;Added first pass of JPA annotations and basic 'findById' named queries.&#10;&#10;--Staff meeting required to clarify further implementation.--">
+      <created>1489957861749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1489957861749</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5817000" />
+    <option name="totallyTimeSpent" value="6083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -826,7 +810,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18385416" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -854,6 +838,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implemented domain and json classes.&#10;Added first pass of JPA annotations and basic 'findById' named queries.&#10;&#10;--Staff meeting required to clarify further implementation.--" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented domain and json classes.&#10;Added first pass of JPA annotations and basic 'findById' named queries.&#10;&#10;--Staff meeting required to clarify further implementation.--" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
