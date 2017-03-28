@@ -1,7 +1,5 @@
 package json;
 
-import domain.VehicleOwner;
-
 import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
 
