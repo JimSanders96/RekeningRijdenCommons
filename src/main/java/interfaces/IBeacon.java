@@ -14,9 +14,9 @@ public interface IBeacon extends Serializable {
 
     void setLatitude(double latitude);
 
-    double getLongtitude();
+    double getLongitude();
 
-    void setLongtitude(double longtitude);
+    void setLongitude(double longtitude);
 
     long getTimestamp();
 
