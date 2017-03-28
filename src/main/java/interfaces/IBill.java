@@ -4,6 +4,7 @@ import domain.BillStatus;
 import domain.Month;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by Jim on 28-3-2017.
@@ -30,7 +31,7 @@ public interface IBill extends Serializable {
 
     void setBillStatus(BillStatus billStatus);
 
-    IRegion getRegion();
+    List<IRegion> getRegions();
 
-    void setRegion(IRegion region);
+    void setRegions(List<IRegion> region);
 }
