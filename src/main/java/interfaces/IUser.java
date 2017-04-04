@@ -30,4 +30,8 @@ public interface IUser extends Serializable {
     long getVehicleOwnerId();
 
     void setVehicleOwnerId(long vehicleOwnerId);
+
+    String getLanguagePreference();
+
+    void setLanguagePreference(String languagePreference);
 }
