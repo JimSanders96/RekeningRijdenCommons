@@ -3,6 +3,7 @@ package interfaces;
 import domain.Role;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by Jim on 28-3-2017.
@@ -25,7 +26,7 @@ public interface IEmployee extends Serializable {
 
     void setEmail(String email);
 
-    Role getRole();
+    List<Role> getRoles();
 
-    void setRole(Role role);
+    void setRoles(List<Role> role);
 }
