@@ -9,10 +9,8 @@ import java.util.List;
 public interface IVehicleTracker extends Serializable{
 
     String getICAN() ;
-
     void setICAN(String ICAN) ;
 
     List<IBeacon> getBeacons() ;
-
     void setBeacons(List<IBeacon> beacons) ;
 }

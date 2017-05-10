@@ -8,18 +8,14 @@ import java.io.Serializable;
 public interface IRegion extends Serializable {
 
     long getId();
-
     void setId(long id);
 
     double getKilometerRate();
-
     void setKilometerRate(double kilometerRate);
 
     float getTimeInterval();
-
     void setTimeInterval(float timeInterval);
 
     String getName();
-
     void setName(String name);
 }
