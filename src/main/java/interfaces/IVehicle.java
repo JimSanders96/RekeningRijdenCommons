@@ -11,8 +11,8 @@ public interface IVehicle extends Serializable {
     long getId();
     void setId(long id);
 
-    String getLicencePlate();
-    void setLicencePlate(String licencePlate);
+    String getLicensePlate();
+    void setLicensePlate(String licencePlate);
 
     String getBrand();
     void setBrand(String brand);
