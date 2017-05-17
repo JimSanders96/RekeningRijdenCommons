@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class VehicleJSON {
     @XmlElement public long id;
-    @XmlElement public String licencePlate;
+    @XmlElement public String licensePlate;
     @XmlElement public String brand;
     @XmlElement public String currentVehicleICAN;
     @XmlElement public List<String> previousVehicleICANs;
