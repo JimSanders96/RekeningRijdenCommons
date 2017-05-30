@@ -17,6 +17,12 @@ public interface IVehicle extends Serializable {
     String getBrand();
     void setBrand(String brand);
 
+    int getMassa();
+    void setMassa(int massa);
+
+    String getFuelType();
+    void setFuelType(String fuelType);
+
     IVehicleOwner getCurrentVehicleOwner();
     void setCurrentVehicleOwner(IVehicleOwner currentVehicleOwner);
 

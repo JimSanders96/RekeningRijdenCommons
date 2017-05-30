@@ -5,6 +5,7 @@ import domain.Month;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 public interface IBill extends Serializable {
 
@@ -16,6 +17,9 @@ public interface IBill extends Serializable {
 
     Month getRegardedMonth();
     void setRegardedMonth(Month regardedMonth);
+
+    Map<String,Double> getKmPerRegion();
+    void setKmPerRegion(Map<String,Double> kmPerRegion);
 
     long getDateIssued();
     void setDateIssued(long dateIssued);
