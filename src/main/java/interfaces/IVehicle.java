@@ -29,8 +29,8 @@ public interface IVehicle extends Serializable {
     IVehicleOwner getCurrentVehicleOwner();
     void setCurrentVehicleOwner(IVehicleOwner currentVehicleOwner);
 
-    Map<IVehicleOwner,Date>getPreviousVehicleOwners();
-    void setPreviousVehicleOwners(HashMap<IVehicleOwner,Date> previousVehicleOwners);
+    Map<long,IVehicleOwner>getPreviousVehicleOwners();
+    void setPreviousVehicleOwners(HashMap<long,IVehicleOwner> previousVehicleOwners);
 
     List<String> getPreviousVehicleTrackerICANs();
     void setPreviousVehicleTrackerICANs(List<String> previousVehicleTrackerICAN);

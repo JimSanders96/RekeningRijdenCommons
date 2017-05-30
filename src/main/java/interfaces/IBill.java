@@ -19,8 +19,8 @@ public interface IBill extends Serializable {
     Month getRegardedMonth();
     void setRegardedMonth(Month regardedMonth);
 
-    Map<String,Double> getKmPerRegion();
-    void setKmPerRegion(HashMap<String,Double> kmPerRegion);
+    Map<String,double> getKmPerRegion();
+    void setKmPerRegion(HashMap<String,double> kmPerRegion);
 
     long getDateIssued();
     void setDateIssued(long dateIssued);
