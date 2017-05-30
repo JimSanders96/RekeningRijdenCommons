@@ -4,6 +4,7 @@ import domain.BillStatus;
 import domain.Month;
 
 import java.io.Serializable;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -19,7 +20,7 @@ public interface IBill extends Serializable {
     void setRegardedMonth(Month regardedMonth);
 
     Map<String,Double> getKmPerRegion();
-    void setKmPerRegion(Map<String,Double> kmPerRegion);
+    void setKmPerRegion(HashMap<String,Double> kmPerRegion);
 
     long getDateIssued();
     void setDateIssued(long dateIssued);

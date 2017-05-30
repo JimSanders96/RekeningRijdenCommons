@@ -1,7 +1,10 @@
 package interfaces;
 
 import java.io.Serializable;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Jim on 28-3-2017.
@@ -17,8 +20,8 @@ public interface IVehicle extends Serializable {
     String getBrand();
     void setBrand(String brand);
 
-    int getMassa();
-    void setMassa(int massa);
+    int getMass();
+    void setMass(int mass);
 
     String getFuelType();
     void setFuelType(String fuelType);
@@ -26,8 +29,8 @@ public interface IVehicle extends Serializable {
     IVehicleOwner getCurrentVehicleOwner();
     void setCurrentVehicleOwner(IVehicleOwner currentVehicleOwner);
 
-    List<IVehicleOwner> getPreviousVehicleOwners();
-    void setPreviousVehicleOwners(List<IVehicleOwner> previousVehicleOwners);
+    Map<IVehicleOwner,Date>getPreviousVehicleOwners();
+    void setPreviousVehicleOwners(HashMap<IVehicleOwner,Date> previousVehicleOwners);
 
     List<String> getPreviousVehicleTrackerICANs();
     void setPreviousVehicleTrackerICANs(List<String> previousVehicleTrackerICAN);
