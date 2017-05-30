@@ -12,29 +12,38 @@ import java.util.Map;
 public interface IVehicle extends Serializable {
 
     long getId();
+
     void setId(long id);
 
     String getLicensePlate();
+
     void setLicensePlate(String licencePlate);
 
     String getBrand();
+
     void setBrand(String brand);
 
     int getMass();
+
     void setMass(int mass);
 
     String getFuelType();
+
     void setFuelType(String fuelType);
 
     IVehicleOwner getCurrentVehicleOwner();
+
     void setCurrentVehicleOwner(IVehicleOwner currentVehicleOwner);
 
-    Map<long,IVehicleOwner>getPreviousVehicleOwners();
-    void setPreviousVehicleOwners(HashMap<long,IVehicleOwner> previousVehicleOwners);
+    Map<Long, IVehicleOwner> getPreviousVehicleOwners();
+
+    void setPreviousVehicleOwners(HashMap<Long, IVehicleOwner> previousVehicleOwners);
 
     List<String> getPreviousVehicleTrackerICANs();
+
     void setPreviousVehicleTrackerICANs(List<String> previousVehicleTrackerICAN);
 
     String getCurrentVehicleTrackerICAN();
+
     void setCurrentVehicleTrackerICAN(String currentVehicleTrackerICAN);
 }

@@ -2,9 +2,10 @@ package domain;
 
 import java.awt.*;
 import java.awt.geom.Point2D;
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class Polygon2D implements Serializable{
+public class Polygon2D implements Serializable {
 
     private int npoints;
 
@@ -25,21 +26,22 @@ public class Polygon2D implements Serializable{
     /**
      * Constructs and initializes a <code>Polygon</code> from the specified
      * parameters.
+     *
      * @param xpoints an array of X coordinates
      * @param ypoints an array of Y coordinates
      * @param npoints the total number of points in the
-     *                          <code>Polygon</code>
-     * @exception  NegativeArraySizeException if the value of
-     *                       <code>npoints</code> is negative.
-     * @exception  IndexOutOfBoundsException if <code>npoints</code> is
-     *             greater than the length of <code>xpoints</code>
-     *             or the length of <code>ypoints</code>.
-     * @exception  NullPointerException if <code>xpoints</code> or
-     *             <code>ypoints</code> is <code>null</code>.
+     *                <code>Polygon</code>
+     * @throws NegativeArraySizeException if the value of
+     *                                    <code>npoints</code> is negative.
+     * @throws IndexOutOfBoundsException  if <code>npoints</code> is
+     *                                    greater than the length of <code>xpoints</code>
+     *                                    or the length of <code>ypoints</code>.
+     * @throws NullPointerException       if <code>xpoints</code> or
+     *                                    <code>ypoints</code> is <code>null</code>.
      */
     public Polygon2D(double xpoints[], double ypoints[], int npoints) {
         if (npoints > xpoints.length || npoints > ypoints.length) {
-            throw new IndexOutOfBoundsException("npoints > xpoints.length || "+
+            throw new IndexOutOfBoundsException("npoints > xpoints.length || " +
                     "npoints > ypoints.length");
         }
         if (npoints < 0) {
@@ -76,8 +78,9 @@ public class Polygon2D implements Serializable{
      * <code>Polygon</code> has already been performed, such as
      * <code>getBounds</code> or <code>contains</code>, then this
      * method updates the bounding box.
-     * @param       x the specified X coordinate
-     * @param       y the specified Y coordinate
+     *
+     * @param x the specified X coordinate
+     * @param y the specified Y coordinate
      */
     public void addPoint(double x, double y) {
         if (npoints >= xpoints.length || npoints >= ypoints.length) {
@@ -101,9 +104,10 @@ public class Polygon2D implements Serializable{
     /**
      * Determines whether the specified {@link Point} is inside this
      * <code>Polygon</code>.
+     *
      * @param p the specified <code>Point</code> to be tested
      * @return <code>true</code> if the <code>Polygon</code> contains the
-     *                  <code>Point</code>; <code>false</code> otherwise.
+     * <code>Point</code>; <code>false</code> otherwise.
      * @see #contains(double, double)
      */
     public boolean contains(Point p) {
@@ -114,11 +118,12 @@ public class Polygon2D implements Serializable{
      * Determines whether the specified coordinates are inside this
      * <code>Polygon</code>.
      * <p>
+     *
      * @param x the specified X coordinate to be tested
      * @param y the specified Y coordinate to be tested
      * @return {@code true} if this {@code Polygon} contains
-     *         the specified coordinates {@code (x,y)};
-     *         {@code false} otherwise.
+     * the specified coordinates {@code (x,y)};
+     * {@code false} otherwise.
      * @see #contains(double, double)
      */
     public boolean contains(int x, int y) {
