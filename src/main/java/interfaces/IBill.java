@@ -14,6 +14,10 @@ public interface IBill extends Serializable {
 
     void setId(long id);
 
+    String getIcan();
+
+    void setIcan(String ican);
+
     double getAmount();
 
     void setAmount(double amount);

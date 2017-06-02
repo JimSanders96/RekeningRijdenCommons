@@ -14,6 +14,7 @@ public class BillJSON {
     @XmlElement public long id;
     @XmlElement public double amount;
     @XmlElement public Map<String,Double> kmPerRegion;
+    @XmlElement public String ICAN;
     @XmlElement public Month regardedMonth;
     @XmlElement public long dateIssued;
     @XmlElement public BillStatus billStatus;
