@@ -37,8 +37,4 @@ public interface IBill extends Serializable {
     BillStatus getBillStatus();
 
     void setBillStatus(BillStatus billStatus);
-
-    List<IRegion> getRegions();
-
-    void setRegions(List<IRegion> region);
 }
