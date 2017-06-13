@@ -10,7 +10,7 @@ public enum Month {
     APRIL,
     MAY,
     JUNE,
-    JULI,
+    JULY,
     AUGUST,
     SEPTEMBER,
     OCTOBER,
